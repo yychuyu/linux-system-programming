@@ -13,6 +13,7 @@ int main(void)
             sleep(1);
         }
     } else if (pid > 0) {
+			/* 父进程睡眠3秒后退出 */
             printf("I am parent, my pid is = %d\n", getpid());
             sleep(3);
             printf("------------parent going to die------------\n");
